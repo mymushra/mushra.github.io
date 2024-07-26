@@ -1,0 +1,139 @@
+testname: 音频主观测试（共5个样本）/MUSHRA test(5 samples)
+testId: default_example
+bufferSize: 2048
+stopOnErrors: false
+showButtonPreviousPage: true
+remoteService: service/write.php
+
+
+pages:
+    # - type: generic
+      # id: first_page
+      # name: Welcome
+      # content: Welcome to webMUSHRA!
+    - type: mushra
+      id: 1.0kbps_61-70968-0000
+      name: 1.0kbps
+      content: 请先试听下方左侧的原始语音“Reference”，默认其100分，然后再对右侧的“Cond.x”进行试听并打分。语音内容是：He began a confused complaint against the wizard who had vanished behind the curtain on the left.
+      showWaveform: true
+      enableLooping: true
+      # strict: false
+      reference: configs/resources/audio/ref/61-70968-0000.wav
+      # reference: configs/resources/audio/mono_ref.wav
+      createAnchor35: false
+      createAnchor70: false
+      stimuli:
+        # C1: configs/resources/audio/mono_c1.wav
+        C1: configs/resources/audio/1.0kbps/Codec2_1k2/61-70968-0000.wav
+        C2: configs/resources/audio/1.0kbps/DAC_1k/61-70968-0000.wav
+        C3: configs/resources/audio/1.0kbps/MELP_1k2/61-70968-0000.wav
+        C4: configs/resources/audio/1.0kbps/Opus_1k2/61-70968-0000.wav
+        C5: configs/resources/audio/1.0kbps/soundstream_1k/61-70968-0000.wav
+        C6: configs/resources/audio/1.0kbps/Speex_1k2/61-70968-0000.wav
+        C7: configs/resources/audio/1.0kbps/SVCODEC_1k/61-70968-0000.wav
+
+          # - random
+    - type: mushra
+      id: 1.5kbps_61-70968-0000
+      name: 1.5kbps
+      content: 语音内容是：He began a confused complaint against the wizard who had vanished behind the curtain on the left.
+      enableLooping: true
+      reference: configs/resources/audio/ref/61-70968-0001.wav
+      createAnchor35: false
+      createAnchor70: false
+      stimuli:
+        C1: configs/resources/audio/1.5kbps/DAC_1k5/61-70968-0000.wav
+        C2: configs/resources/audio/1.5kbps/soundstream_1k5/61-70968-0000.wav
+        C3: configs/resources/audio/1.5kbps/Encodec_1k5/61-70968-0000.wav
+        C4: configs/resources/audio/1.5kbps/SVCODEC_1k5/61-70968-0000.wav
+          #
+    - type: mushra
+      id: 2.0kbps_61-70968-0000
+      name: 2.0kbps
+      content: 语音内容是：He began a confused complaint against the wizard who had vanished behind the curtain on the left.
+      enableLooping: true
+      reference: configs/resources/audio/ref/61-70968-0000.wav
+      createAnchor35: false
+      createAnchor70: false
+      stimuli:
+        C1: configs/resources/audio/2.0kbps/DAC_2k/61-70968-0000.wav
+        C2: configs/resources/audio/2.0kbps/soundstream_2k/61-70968-0000.wav
+        C3: configs/resources/audio/2.0kbps/SVCODEC_2k/61-70968-0000.wav
+    #
+    - type: mushra
+      id: 2.5kbps_61-70968-0000
+      name: 2.5kbps
+      content: 语音内容是：He began a confused complaint against the wizard who had vanished behind the curtain on the left.
+      enableLooping: true
+      reference: configs/resources/audio/ref/61-70968-0000.wav
+      createAnchor35: false
+      createAnchor70: false
+      stimuli:
+        C1: configs/resources/audio/2.5kbps/Codec_2k4/61-70968-0000.wav
+        C2: configs/resources/audio/2.5kbps/soundstream_2k5/61-70968-0000.wav
+        C3: configs/resources/audio/2.5kbps/SVCODEC_2k5/61-70968-0000.wav
+        C4: configs/resources/audio/2.5kbps/MELP_2k4/61-70968-0000.wav
+        C5: configs/resources/audio/2.5kbps/Opus_2k4/61-70968-0000.wav
+        C6: configs/resources/audio/2.5kbps/DAC_2k5/61-70968-0000.wav
+    #
+    - type: mushra
+      id: 3.0kbps_61-70968-0000
+      name: 3.0kbps
+      content: 语音内容是：He began a confused complaint against the wizard who had vanished behind the curtain on the left.
+      enableLooping: true
+      reference: configs/resources/audio/ref/61-70968-0000.wav
+      createAnchor35: false
+      createAnchor70: false
+      stimuli:
+        C1: configs/resources/audio/3.0kbps/Codec_3k2/61-70968-0000.wav
+        C2: configs/resources/audio/3.0kbps/DAC_3k/61-70968-0000.wav
+        C3: configs/resources/audio/3.0kbps/Encodec_3k/61-70968-0000.wav
+        C4: configs/resources/audio/3.0kbps/Lyra_3k2/61-70968-0000.wav
+        C5: configs/resources/audio/3.0kbps/soundstream_3k/61-70968-0000.wav
+        C6: configs/resources/audio/3.0kbps/Speex_3k/61-70968-0000.wav
+        C7: configs/resources/audio/3.0kbps/SVCODEC_3k/61-70968-0000.wav
+    #
+    - type: mushra
+      id: 4.0kbps_61-70968-0000
+      name: 4.0kbps
+      content: 语音内容是：He began a confused complaint against the wizard who had vanished behind the curtain on the left.
+      enableLooping: true
+      reference: configs/resources/audio/ref/61-70968-0000.wav
+      createAnchor35: false
+      createAnchor70: false
+      stimuli:
+        C1: configs/resources/audio/4kbps/DAC_4k/61-70968-0000.wav
+        C2: configs/resources/audio/4kbps/Opus_4k/61-70968-0000.wav
+        C3: configs/resources/audio/4kbps/soundstream_4k/61-70968-0000.wav
+        C4: configs/resources/audio/4kbps/Speex_4k/61-70968-0000.wav
+        C5: configs/resources/audio/4kbps/SVCODEC_4k/61-70968-0000.wav
+
+
+
+
+
+    - type: finish
+      name: Thank you
+      content: Thank you for attending!
+      showResults: true
+      writeResults: true
+      questionnaire:
+          - type: text
+            label: eMail
+            name: email
+          - type: number
+            label: Age
+            name: age
+            min: 0
+            max: 100
+            default: 30
+          - type: likert
+            name: gender
+            label: Gender
+            response:
+             - value: female
+               label: Female
+             - value: male
+               label: Male
+             - value: other
+               label: Other
